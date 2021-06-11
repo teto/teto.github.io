@@ -1,0 +1,11 @@
+---
+title: Nixops
+tags: flake, nix
+author: Matt
+---
+
+After trying for a while to run a modern nixops + libvirtd, I caved in and
+resorted to:
+```
+nix build --impure --expr '(builtins.getFlake "github:input-output-hk/nixops-flake")'\ ~ '.impure.${builtins.currentSystem}.nixops_2_0-latest-unstable [ "virtd" ]'
+```

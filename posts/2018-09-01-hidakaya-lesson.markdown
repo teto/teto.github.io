@@ -1,5 +1,5 @@
 ---
-title: Tu Quoque
+title: Hidakya
 tags: japonais, francais
 author: Matt
 ---
